@@ -1,0 +1,11 @@
+---
+applications:
+- name: spring-data-mongodb-test
+  memory: 512M
+  host: sdmt
+  path: build/libs/spring-data-mongodb-test-0.0.1-SNAPSHOT.jar
+  buildpack: java_buildpack
+  env:
+    SPRING_PROFILES_ACTIVE : cloud
+  services:
+    - mongodb
